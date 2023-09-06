@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "omnes-pro", sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 48px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+/* WORKS SECTION */
+#works {
+  width: 100%;
+  height: 100%;
+
+  padding: 50px 10px 50px 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+h3 {
+  padding-top: 12px;
+  font-size: 32px;
+  padding-bottom: 12px;
+}
+.description {
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+
+.medium {
+  font-style: italic;
+}
+.post {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+#back-to-top {
+  margin-bottom: 50px;
+}
