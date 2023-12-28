@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon-02-01.png" />
+    <title>2023 Men's Football Roster | Howard S. Billings Athletics</title>
+    <link rel="stylesheet" href="../../css/football-schedule.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://kit.fontawesome.com/bea69a0af2.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div id="preloader"></div>
+    <nav>
+        <a href="../home.html"><i class="fa-solid fa-house" style="color: #ffffff; font-size: 20px;"> </i></a>
+        <!-- <a href="../index.html" class="home">HOME</a></li> -->
+        <a class="navbar-brand" href="#">
+            <img src="../img/blazers-logo.png" alt="" width="90px" height="auto" alt="">
+        </a>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul>
+            <li><a href="./football-home.html">Football</a></li>
+            <li><a href="../hockey/hockey-home.html">Hockey</a></li>
+            <li><a href="#rugby">Rugby</a></li>
+            <li><a href="#flag-football">Flag Football</a></li>
+            <li><a href="#basketball">Basketball</a></li>
+
+            <li><a href="#soccer">Soccer</a></li>
+        </ul>
+
+    </nav>
+    <div class="second-nav">
+        <div>
+            <a id="gohome" href="./football-home.html">
+                <h3>FOOTBALL</h3>
+            </a>
+        </div>
+        <ul class="mini-nav">
+            <li><a href="./football-roster.html">Roster</a></li>
+            <li><a href="./football-schedule.html">Schedule</a></li>
+
+
+        </ul>
+    </div>
+    <section class="main">
+        <div class="title">
+            <h1>| 2023 Football Schedule</h1>
+        </div>
+        <div class="game-cards">
+            <div class="search-bar">
+                <input type="text" id="filter-input" placeholder="Search by win/loss">
+            </div>
+            <div class="card" data-result="Win">
+                <div class="left">
+                    <h3>vs. Mgr-Euclide-Théberge</h3>
+                    <p>677 Rue Desjardins, Marieville, QC J3M 1R1</p>
+                </div>
+                <div class="right">
+                    <p id="score">28-7</p>
+                    <p>09-01-2023 | 7:00pm</p>
+                    <p>Result: Win</p>
+                </div>
+            </div>
+
+
+            <div class="card" data-result="Lose">
+                <div class="left">
+                    <h3>vs. Louis-Philippe-Paré</h3>
+                    <p>235 Bd Brisebois, Châteauguay, QC J6K 3X4</p>
+                </div>
+                <div class="right">
+                    <p id="score">7-30</p>
+                    <p>09-08-2023 | 7:00pm</p>
+                    <p>Result: Loss</p>
+                </div>
+            </div>
+
+
+
+            <div class="card" data-result="Lose">
+                <div class="left">
+                    <h3>vs. Fernand-Lefebvre</h3>
+                    <p>265 Rue de Ramezay, Sorel-Tracy, QC J3P 4A5</p>
+                </div>
+                <div class="right">
+                    <p id="score">21-28</p>
+                    <p>09-15-2023 | 8:00pm</p>
+                    <p>Result: Loss</p>
+                </div>
+            </div>
+
+
+            <div class="card" data-result="Win">
+                <div class="left">
+                    <h3>vs. S. de Sherbrooke</h3>
+                    <p>210 Rue McLeod, Châteauguay, QC J6J 2H4</p>
+                </div>
+                <div class="right">
+                    <p id="score">42-14</p>
+                    <p>09-21-2023 | 6:00pm</p>
+                    <p>Result: Win</p>
+                </div>
+            </div>
+
+
+            <div class="card" data-result="Win">
+                <div class="left">
+                    <h3>vs. Hyacinthe-Delorme</h3>
+                    <p>210 Rue McLeod, Châteauguay, QC J6J 2H4</p>
+                </div>
+                <div class="right">
+                    <p id="score">35-32</p>
+                    <p>09-29-2023 | 6:30pm</p>
+                    <p>Result: Win</p>
+                </div>
+            </div>
+
+            <div class="card" data-result="Win">
+                <div class="left">
+                    <h3>vs. Saint-Joseph</h3>
+                    <p>2875 Av. Bourdages N, Saint-Hyacinthe, QC J2S 5S3</p>
+                </div>
+                <div class="right">
+                    <p id="score">14-3</p>
+                    <p>10-06-2023 | 7:00pm </p>
+                    <p>Result: Win</p>
+                </div>
+            </div>
+
+            <div class="card" data-result="Win">
+                <div class="left">
+                    <h3>vs. Marcel-Landry</h3>
+                    <p>365 Av. Landry, Saint-Jean-sur-Richelieu, QC J2X 2P6</p>
+                </div>
+                <div class="right">
+                    <p id="score">24-14</p>
+                    <p>10-12-023 | 6:45pm</p>
+                    <p>Result: Win</p>
+                </div>
+            </div>
+
+
+            <div class="card" data-result="Lose">
+                <div class="left">
+                    <h3>vs. J.-H.-Leclerc</h3>
+                    <p>1111 Rue Simonds S, Granby, QC J2G 9H7</p>
+                </div>
+                <div class="right">
+                    <p id="score">28-38</p>
+                    <p>10-19-2023 | 7:00pm</p>
+                    <p>Result: Loss</p>
+                </div>
+            </div>
+
+
+            <div class="card" data-result="Win">
+                <div class="left">
+                    <h3>vs. C. St-Bernard</h3>
+                    <p>210 Rue McLeod, Châteauguay, QC J6J 2H4</p>
+                </div>
+                <div class="right">
+                    <p id="score">27-24</p>
+                    <p>10-26-2023 | 7:30pm</p>
+                    <p>Result: Win</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="foot-container">
+            <div class="row">
+                <div class="footer-col">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11212.288314339929!2d-73.74694993182709!3d45.367540537157254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc914dd00a4dc53%3A0x86e63a64743f004b!2s%C3%89cole%20secondaire%20r%C3%A9gionale%20Howard%20S.%20Billings!5e0!3m2!1sen!2sca!4v1699845950816!5m2!1sen!2sca"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="footer-col">
+                    <h4>address</h4>
+                    <ul>
+
+                        <li><a href="https://www.google.com/maps/d/u/0/viewer?mid=1mwAWw3Wxzhg9k4YpgLtFN2VPZ80&hl=en_US&ll=44.118125%2C-71.18149299999999&z=17"
+                                target="_blank">Howard S. Billings High School
+                                <br>
+                                210 Rue McLeod, <br>Châteauguay, QC<br> J6J 2H4
+
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>contact</h4>
+                    <ul>
+                        <li><a href="">450 691-3230</a>
+
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>opening hours</h4>
+                    <ul>
+                        <li><a href="https://www.storylandnh.com/opening-hours---prices/opening-hours"
+                                target="_blank">Monday: 8:30am -
+                                4:30pm</a></li>
+                        <li><a href="https://www.storylandnh.com/opening-hours---prices/opening-hours"
+                                target="_blank">Tuesday: 8:30am -
+                                4:30pm</a></li>
+                        <li><a href="https://www.storylandnh.com/opening-hours---prices/opening-hours"
+                                target="_blank">Wednesday: 8:30am
+                                - 4:30pm</a></li>
+                        <li><a href="https://www.storylandnh.com/opening-hours---prices/opening-hours"
+                                target="_blank">Thursday: 8:30am
+                                - 4:30pm</a></li>
+                        <li><a href="https://www.storylandnh.com/opening-hours---prices/opening-hours"
+                                target="_blank">Friday: 8:30am -
+                                4:00pm</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/HSBillingsHighSchool/" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/hsbmedia" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a
+                            href="https://www.instagram.com/h.s.billings/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><i
+                                class="fab fa-instagram" target="_blank"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row-sponsor">
+                <article>
+                    <img src="../img/rseq-logo.png">
+                </article>
+                <article>
+                    <img src="../img/queb-logo.png" alt="">
+                </article>
+
+
+            </div>
+
+        </div>
+        <p>&copy; 2023 Howard S. Billings High School</p>
+    </footer>
+
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+    <!-- <script>
+        const filterInput = document.getElementById('filter-input');
+        const cards = document.querySelectorAll('.card');
+
+        filterInput.addEventListener('input', function () {
+            const filterValue = this.value.toLowerCase();
+
+            cards.forEach(card => {
+                const result = card.querySelector('p:last-child').textContent.toLowerCase();
+
+                if (result.includes(filterValue)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script> -->
+    <script>
+        const filterInput = document.getElementById('filter-input');
+        const cards = document.querySelectorAll('.card');
+
+        filterInput.addEventListener('input', function () {
+            const filterValue = this.value.toLowerCase();
+
+            cards.forEach(card => {
+                const rightDivContent = Array.from(card.querySelectorAll('.right p'))
+                    .map(p => p.textContent.toLowerCase())
+                    .join(' ');
+
+                if (rightDivContent.includes(filterValue)) {
+                    card.style.visibility = 'visible';
+                } else {
+                    card.style.visibility = 'hidden';
+                }
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
