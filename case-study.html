@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study</title>
+    <link rel="stylesheet" href="./case-study.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a id="home" href="../../index.html"><img width="90px" height="auto" src="./portfolio-content/logo.svg"
+                    alt=""></a>
+        </div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+
+            <li><a href="#about">ABOUT ME/CONTACT</a></li>
+            <li><a href="./portfolio/pages/client.html">professional work</a></li>
+            <li><a href="./portfolio/pages/stage.html">school projects</a></li>
+            <li><a href="./portfolio/pages/magazine.html">videography</a></li>
+
+        </ul>
+    </nav>
+
+
+
+    <div id="main">
+
+
+
+
+
+
+        <div id="first">
+            <div class="grid-container">
+                <div class="column1">
+                    <h1>HSB Sports Website Creation</h1>
+                    <p>Howard S. Billings is an English public high school in Chateauguay, Quebec. The main service
+                        they
+                        offer is secondary
+                        education from grades 7-11. I was hired to create a sports page for the high school athletic
+                        program to link off of
+                        their official website.</p>
+                </div>
+                <div class="column2">
+                    <div class="slideshow">
+                        <img src="./case-study-billings/slide1.png" alt="Image 1">
+                        <img src="./case-study-billings/slide2.png" alt="Image 2">
+                        <img src="./case-study-billings/slide3.png" alt="Image 3">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="scroll-down-button2">
+                    <a href="#second">
+                        <span class="arrow"></span>
+                    </a>
+                </div> -->
+
+
+        </div>
+
+        <div id="second">
+            <div class="grid-container">
+                <div class="column3">
+                    <img src="./case-study-billings/pic4.png" alt="">
+                </div>
+                <div class="column4">
+
+
+
+                    <h1>What needed to be acheieved?</h1>
+                    <p>Howard S. Billings had no official athletics landing page on its website, and navigating
+                        through
+                        different Facebook
+                        pages just wasn’t cutting it for a public school that was trying to establish itself as a
+                        top
+                        athletic school in the
+                        GMAA. </p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="third">
+
+            <div id="wireframe">
+                <img src="./case-study-billings/wireframes.png" alt="">
+            </div>
+
+        </div>
+
+
+
+        <div id="fourth">
+            <div class="grid-container">
+                <div class="column1-fourth">
+                    <h1>The process</h1>
+                    <p>
+
+                        I was hired to organize this problem and design a professional website dedicated to direct
+                        traffic to the various athletic clubs offered at Howard S.
+                        Billings High School. I had full creative control over the HTML and CSS of this project.
+                    </p>
+                    <p>
+                        With
+                        a user-friendly interface, the website’s primary focus is easy navigation, allowing the user to
+                        effortlessly navigate to
+                        and from different sports clubs while staying on the same website.</p>
+
+
+                </div>
+                <div class="column2">
+                    <div class="video">
+                        <video autoplay loop muted>
+                            <source src="./case-study-billings/process.mp4">
+
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="scroll-down-button2">
+                    <a href="#second">
+                        <span class="arrow"></span>
+                    </a>
+                </div> -->
+
+
+        </div>
+
+        <div id="fifth">
+            <div id="video-container">
+                <video id="background-video" autoplay loop muted poster="./poster.jpg">
+                    <source src="./case-study-billings/case-study1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div id="second">
+            <div class="grid-container">
+                <div class="column3">
+                    <img src="./case-study-billings/final.png" alt="">
+                </div>
+                <div class="column4">
+
+
+
+                    <h1>The result</h1>
+                    <p>Multiple levels of navigation are on every page, simplifying the experience for the user.</p>
+                    <p>Search bars are included on select pages to simplify the experience of finding a certain result.
+                    </p>
+                    <p>Up-to-date, high-quality images bring the website to the next level by immersing the user into
+                        the sport with the
+                        athletes.</p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <script>
+            // Auto slideshow
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("slideshow")[0].getElementsByTagName("img");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 3000); // Change slide every 3 seconds
+            }
+
+        </script>
+
+        <script> // Scroll to next div with an id
+            window.addEventListener("scroll", function () {
+                var currentDiv = document.querySelector("div[id]:not(.intro-container)");
+                var nextDiv = currentDiv.nextElementSibling;
+                if (nextDiv) {
+                    nextDiv.scrollIntoView({ behavior: "smooth" });
+                }
+            });</script>
+        <script>
+
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector("nav");
+                header.classList.toggle("sticky", window.scrollY > 0)
+            })
+        </script>
+</body>
+
+</html>
