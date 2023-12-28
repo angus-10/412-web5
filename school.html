@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../portfolio-content/FAVICON-06.png">
+    <script defer src="./js/school.js"></script>
+    <title>Angus Simmonds | School Work</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/school.css">
+
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a id="home" href="../index.html"><img width="90px" height="auto" src="../portfolio-content/logo.svg"
+                    alt=""></a>
+        </div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+
+            <li><a href="../index.html#about">CONTACT</a></li>
+
+            <li><a href="../professional/professional.html">professional work</a></li>
+
+            <li><a href="./portfolio/pages/client.html">videography</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="professional">
+
+            <div class="work-title">
+                <div class="title1">SCHOOL WORK</div>
+                <div class="title2">school work</div>
+                <div class="title1">SCHOOL WORK</div>
+                <div class="title2">school work</div>
+
+            </div>
+        </div>
+        <div class="container">
+
+
+            <div class="grid">
+
+                <div class="row1">
+
+
+                    <div class="gallery-child" onclick="showPopup(1)">
+                        <div class="image">
+                            <img class="bg" src="img/cinergy/cinergy_cover.png">
+                        </div>
+                        <div class="desc">
+                            <h3 class="gallery-title">CINERGY BRAND CREATION</h3>
+                            <p class="gallery-p">Discover more about my Division 1 sports card projects.</p>
+                        </div>
+                    </div>
+                    <div id="hidden-content-1" style="display: none;">
+                        <!-- Content of your modified popup goes here -->
+                        <div class="image">
+                            <img class="bg" src="img/cinergy/cinergy_cover.png">
+                        </div>
+                        <div class="desc">
+                            <h3 class="gallery-title">CINERGY BRAND CREATION</h3>
+                            <p class="gallery-p">Modified description 1.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row2">
+                    <a href="../case-study.html">
+                        <div class="gallery-child" onclick="showPopup(4)">
+                            <div class="image">
+                                <img class="bg" src="img/billings/billings_cover.png" alt="" class="aesthetic">
+                            </div>
+                            <div class="desc">
+                                <h3 class="gallery-title">HSB SPORTS WEBSITE DESIGN</h3>
+                                <p class="gallery-p">Discover more about my GReJI logo design project.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div id="hidden-content-4" style="display: none;">
+                        <!-- Content of your modified popup goes here -->
+                        <div class="image">
+                            <img class="bg" src="img/greji/greji_cover.png">
+                        </div>
+                        <div class="desc">
+                            <h3 class="gallery-title">GREJI LOGO DESIGN</h3>
+                            <p class="gallery-p">Modified description 1.</p>
+                        </div>
+                    </div>
+
+                    <!--  -->
+
+
+
+                </div>
+                <div class="row3">
+                    <div class="gallery-child" onclick="showPopup(6)">
+                        <div class="image">
+                            <img class="bg" src="img/tourisme/tourisme_cover.png" alt="" class="aesthetic">
+                        </div>
+                        <div class="desc">
+                            <h3 class="gallery-title">TOURISME MONTREAL NEWSLETTER </h3>
+                            <p class="gallery-p">Discover more about my AVAQ brochure project.</p>
+                        </div>
+                    </div>
+                    <div id="hidden-content-6" style="display: none;">
+                        <!-- Content of your modified popup goes here -->
+                        <div class="image">
+                            <img class="bg" src="img/tourisme/tourisme_cover.png">
+                        </div>
+                        <div class="desc">
+                            <h3 class="gallery-title">TOURISME MONTREAL NEWSLETTER REDESIGN</h3>
+                            <p class="gallery-p">Modified description 1.</p>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+
+            <div id="popup" class="popup">
+                <!-- Content of your popup goes here -->
+                <span id="close-popup" onclick="closePopup()">&times;</span>
+                <div id="popup-content"></div>
+            </div>
+
+
+
+</body>
+
+
+</html>
